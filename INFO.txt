@@ -1,0 +1,38 @@
+Project Info:-
+       File Integrity Checker 
+
+Internship Task:
+Build a tool to monitor file changes by calculating and comparing hash values.
+
+Purpose:
+This project helps in detecting changes in files by generating and comparing hash values (SHA-256).
+It ensures file integrity and can be used for security or backup validation.
+
+Features:
+- Scans files in a selected directory.
+- Creates SHA-256 hashes for each file.
+- Saves hashes in a file named hashes.json.
+- Detects and shows:
+    [NEW]      → New files added.
+    [CHANGED]  → Files modified.
+    [REMOVED]  → Files deleted since last scan.
+
+Technologies Used:
+- Python 3.11
+- hashlib (built-in Python library)
+- json (for storing hash data)
+
+Project Files:
+- file_integrity_checker.py : Main Python script
+- hashes.json : Sample hash output (optional)
+- README.md : Project description and usage guide
+- requirements.txt : Python libraries used (optional)
+- .gitignore : To ignore unnecessary files (optional)
+
+Status:
+Project Completed and Tested Successfully
+
+Note:
+This tool is useful for security audits, backup validation, and system integrity checks.
+
+Submitted By: [VIRAJ BHOIR]
