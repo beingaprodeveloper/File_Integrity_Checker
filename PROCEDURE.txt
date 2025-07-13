@@ -1,0 +1,42 @@
+*FILE INTEGRITY CHECKER*
+
+ 
+STEP 1: Set Up Eclipse for Python 
+
+1. Install Eclipse IDE for Python Developers (or install PyDev plugin in Eclipse). 
+
+2. Create a new PyDev project: 
+      o File → New → Project → PyDev Project → Name it FileIntegrityChecker. 
+
+3. Create a new PyDev Module (Python File): 
+      o Right-click on the project → New → PyDev Module → Name it integrity_checker.py. 
+ 
+STEP 2: Python Script (Improved Version) 
+    This version: 
+    • Stores hash data in a file (hashes.json) 
+    • Allows multiple attempts 
+    • Detects new, modified, and deleted files 
+ 
+ {//"CODE WILL BE ENTER"//}
+ 
+ 
+STEP 3: Run in Eclipse 
+    1. Right-click the script → Run As → Python Run. 
+    2. Enter the directory path (e.g., D:\YourFolder\Demo). 
+    3. Run again after making changes to files in that folder. 
+ 
+   
+   
+What It Does 
+    • First run: stores hashes. 
+    • Next run: compares old vs new. 
+    • Shows: 
+          o [NEW] – newly added files 
+          o [CHANGED] – modified files 
+          o [DELETED] – removed files 
+          o [UNCHANGED] – untouched files 
+ 
+
+We Can Re-run Multiple Times 
+    • It will keep comparing with the last saved state (hashes.json). 
+    • Make changes in files and re-run to observe the results.
